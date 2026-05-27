@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>She Can Foundation - Women Empowerment NGO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========== LANDING PAGE ========== -->
+  <div id="landing-page" class="page">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h1>♀️ She Can Foundation</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <button class="dark-mode-btn" id="darkModeToggle" title="Toggle Dark Mode">
+              🌙
+            </button>
+          </li>
+          <li><a href="#" class="nav-link" onclick="showAdminLogin(event)">Admin</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">She Can Foundation</h1>
+        <p class="hero-subtitle">Global Vision, Local Action</p>
+        <p class="hero-description">
+          NGO Registered Under the Indian Society Act, 1860. Empowering women and creating a more equitable society through support, resources, and training across communities globally.
+        </p>
+        <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+          Join Our Mission
+        </button>
+      </div>
+      <div class="hero-background"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Our Mission</h3>
+            <p>
+              We are She Can Foundation, a non-governmental organization dedicated to empowering women and creating a more equitable society. We provide support, resources, and training to women in communities across the globe, working closely with local organizations, governments, and communities to ensure that our programs are effective and sustainable.
+            </p>
+            <h3 style="margin-top: 20px;">Our Approach</h3>
+            <p>
+              Through advocacy campaigns and initiatives, we raise awareness of women's issues. We work together with individuals, corporations, and other organizations to achieve our vision. By collaborating, we can revolutionize society and create a better world for all.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <h4>🌍</h4>
+              <p>Global Communities</p>
+            </div>
+            <div class="stat-card">
+              <h4>👩</h4>
+              <p>Women Empowered</p>
+            </div>
+            <div class="stat-card">
+              <h4>✅</h4>
+              <p>Sustainable Impact</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 class="section-title">What We Do</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <div class="gallery-placeholder">📚 Education & Training</div>
+            <p>Providing quality education, skill development, and training programs to empower women with knowledge and capabilities</p>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder">🏥 Health & Support</div>
+            <p>Raising awareness and providing support on health issues affecting women across communities</p>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder">🤝 Community Partnership</div>
+            <p>Working closely with local organizations, governments, and communities for sustainable impact</p>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder">📢 Advocacy & Change</div>
+            <p>Running advocacy campaigns and initiatives to raise awareness of women's rights and issues</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" style="padding: 100px 20px; background: var(--surface-light); text-align: center;">
+      <div class="container">
+        <h2 class="section-title">Leadership</h2>
+        <div class="team-member" style="max-width: 600px; margin: 0 auto; background: var(--background); padding: 40px; border-radius: 15px; box-shadow: var(--shadow);">
+          <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 10px;">Reeta Mishra</h3>
+          <p style="font-size: 1.2rem; color: var(--text-secondary); font-weight: 600; margin-bottom: 20px;">Founder & President</p>
+          <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px;">
+            "Together, we can break down barriers and empower women. At She Can Foundation, we believe that if we all do our part, there is no challenge too great to overcome. Join us in our mission to create a world where every woman has the opportunity to thrive and succeed."
+          </p>
+          <p style="color: var(--primary-color); font-style: italic; font-weight: 500;">- Reeta Mishra, Founder & President</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Enter your full name"
+                required
+              >
+              <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter your email"
+                required
+              >
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                placeholder="Share your message or inquiry..."
+                required
+              ></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="loader" id="loader" style="display: none;"></span>
+            </button>
+
+            <div class="success-message" id="successMessage" style="display: none;">
+              ✅ Form Submitted Successfully!
+            </div>
+            <div class="error-message" id="formError" style="display: none;"></div>
+          </form>
+
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+              <span class="icon">�</span>
+              <p><strong>Email:</strong><br>president@shecanfoundation.org</p>
+            </div>
+            <div class="info-item">
+              <span class="icon">📞</span>
+              <p><strong>Phone:</strong><br>+91 - 8283841830</p>
+            </div>
+            <div class="info-item">
+              <span class="icon">📱</span>
+              <p><strong>Follow Us:</strong><br>Instagram: @_shecanfoundation_<br>LinkedIn: She Can Foundation</p>
+            </div>
+            <div class="info-item">
+              <span class="icon">🏛️</span>
+              <p><strong>Registration:</strong><br>NGO Registered Under Indian Society Act, 1860</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 She Can Foundation | NGO Registered Under the Indian Society Act, 1860 | Together We Can Change</p>
+        <p style="margin-top: 10px; font-size: 0.9rem;">Founder & President: Reeta Mishra | Global Vision, Local Action</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ========== ADMIN LOGIN PAGE ========== -->
+  <div id="admin-login-page" class="page" style="display: none;">
+    <div class="admin-login-container">
+      <div class="admin-login-card">
+        <h2>Admin Login</h2>
+        <p>She Can Foundation - Admin Panel</p>
+        
+        <form id="adminLoginForm">
+          <div class="form-group">
+            <label for="adminUsername">Username</label>
+            <input 
+              type="text" 
+              id="adminUsername" 
+              name="username" 
+              placeholder="Enter username"
+              required
+            >
+            <span class="error-message" id="adminUsernameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="adminPassword">Password</label>
+            <input 
+              type="password" 
+              id="adminPassword" 
+              name="password" 
+              placeholder="Enter password"
+              required
+            >
+            <span class="error-message" id="adminPasswordError"></span>
+          </div>
+
+          <button type="submit" class="admin-login-btn">Login</button>
+          <div class="error-message" id="adminLoginError" style="display: none;"></div>
+        </form>
+
+        <button class="back-btn" onclick="backToHome()">← Back to Home</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ADMIN PANEL PAGE ========== -->
+  <div id="admin-panel-page" class="page" style="display: none;">
+    <div class="admin-panel">
+      <div class="admin-header">
+        <h2>📋 Admin Dashboard</h2>
+        <div class="admin-actions">
+          <button class="refresh-btn" onclick="loadMessages()">🔄 Refresh</button>
+          <button class="logout-btn" onclick="adminLogout()">🚪 Logout</button>
+        </div>
+      </div>
+
+      <div class="messages-container">
+        <h3>Submitted Messages</h3>
+        <div id="messagesList" class="messages-list">
+          <p class="loading-text">Loading messages...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
