@@ -1,38 +1,8 @@
 # 🌸 She Can Foundation - Women Empowerment NGO Website
 
-A modern, professional, full-stack website for **She Can Foundation** - an NGO registered under the Indian Society Act, 1860, dedicated to empowering women globally. Built with **HTML, CSS, JavaScript, Node.js, Express.js, and SQLite3**.
-
-## About She Can Foundation
-
-**She Can Foundation** is a non-governmental organization dedicated to empowering women and creating a more equitable society. We provide support, resources, and training to women in communities across the globe, working closely with local organizations, governments, and communities to ensure that our programs are effective and sustainable.
-
-**Organization Details:**
-- 📋 NGO Registered Under the Indian Society Act, 1860
-- 🌍 Founder & President: **Reeta Mishra**
-- 📞 Phone: **+91 - 8283841830**
-- 📧 Email: **president@shecanfoundation.org**
-- 📱 Social Media: Instagram (@_shecanfoundation_), LinkedIn (She Can Foundation)
-- 🎯 Motto: **"Together We Can Change"**
-- 🌐 Vision: **"Global Vision, Local Action"**
-
----
+A modern, professional, full-stack website for "She Can Foundation" built with **HTML, CSS, JavaScript, Node.js, Express.js, and SQLite3**. This project demonstrates best practices in web development with a focus on user experience, responsive design, and backend functionality.
 
 ## 📋 Table of Contents
-
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Installation Guide](#installation-guide)
-- [Running the Project](#running-the-project)
-- [API Documentation](#api-documentation)
-- [Admin Credentials](#admin-credentials)
-- [What We Do](#what-we-do)
-- [File Descriptions](#file-descriptions)
-- [Troubleshooting](#troubleshooting)
-
----
-
-## ✨ Features
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
@@ -77,37 +47,7 @@ A modern, professional, full-stack website for **She Can Foundation** - an NGO r
 
 ---
 
-## 🎯 What We Do
-
-### Our Core Focus Areas:
-
-1. **📚 Education & Training**
-   - Providing quality education and skill development programs
-   - Training women with knowledge and capabilities for better futures
-
-2. **🏥 Health & Support**
-   - Raising awareness about women's health issues
-   - Providing support across communities
-
-3. **🤝 Community Partnership**
-   - Working with local organizations and governments
-   - Building sustainable solutions with communities
-
-4. **📢 Advocacy & Change**
-   - Running advocacy campaigns for women's rights
-   - Raising awareness of women's issues globally
-
----
-
-## 🌟 Our Philosophy
-
-At She Can Foundation, we believe:
-- **"Together, we can break down barriers and empower women"**
-- By working together, we can revolutionize society
-- Every woman has the opportunity to thrive and succeed
-- Supporting individuals, corporations, and organizations creates lasting impact
-
----
+## �️ Tech Stack
 
 **Frontend:**
 - HTML5
@@ -620,14 +560,7 @@ To deploy this project online:
 
 ## 📞 Support & Contact
 
-**For More Information:**
-- 🌐 Website: https://shecanfoundation.org
-- 📧 Email: president@shecanfoundation.org
-- 📞 Phone: +91 - 8283841830
-- 📱 Instagram: [@_shecanfoundation_](https://www.instagram.com/_shecanfoundation_)
-- 💼 LinkedIn: [She Can Foundation](https://www.linkedin.com/company/shecanfoundation)
-
-For issues or questions about the website:
+For issues or questions:
 - Check the Troubleshooting section
 - Review browser console errors (F12)
 - Check server logs
